@@ -3,14 +3,105 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-            </div>
-            <div>
-                <h3>GUEST</h3>
-            </div>
+
+        <div class="timer-box">
+            <p class="timer" onclick="">00:00</p>
         </div>
+        
+        <div class="container">
+            
+            <div>
+
+                <p class="headings">HOME</p>
+                
+                    <div class="scorecard" id="scoreCardH">
+                        <p class="score-text" id="homeScore">0</p>
+                    </div>  
+                    
+                <div class="score-btn-group">
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementOneH()">+1</p>
+                    </div>
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementTwoH()">+2</p>
+                    </div>
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementThreeH()">+3</p>
+                    </div> 
+                    
+                </div>
+                
+                <div class="score-btn-group">
+                    
+                    <div class="fouls">
+                        <p class="num" id="hq1" onclick="incrementOneH()">0</p>
+                    </div>
+                    
+                    <div class="fouls">
+                        <p class="num" id="hq2" onclick="incrementTwoH()">0</p>
+                    </div>
+                    
+                    <div class="fouls">
+                        <p class="num" id="hq3" onclick="incrementThreeH()">0</p>
+                    </div>
+                    
+                    <div class="fouls">
+                        <p class="num" id="hq4" onclick="incrementThreeH()">0</p>
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div>
+
+                <p class="headings">GUEST</p>
+                
+                    <div class="scorecard" id="scoreCardG">
+                        <p class="score-text" id="guestScore">0</p>
+                    </div>
+                    
+                <div class="score-btn-group">
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementOneG()">+1</p>
+                    </div>
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementTwoG()">+2</p>
+                    </div>
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementThreeG()">+3</p>
+                    </div> 
+                    
+                </div>   
+                
+                <div class="score-btn-group">
+                        
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementOneG()">+1</p>
+                    </div>
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementTwoG()">+2</p>
+                    </div>
+                    
+                    <div class="score-btn">
+                        <p class="num" onclick="incrementThreeG()">+3</p>
+                    </div>     
+                     
+                </div> 
+            </div>     
+        </div>
+        
+        <div class="new-game-btn">
+            <p class="new-game" onclick="newGame()">NEW GAME</p>
+        </div>
+        
         <script src="index.js"></script>
     </body>
 </html>
